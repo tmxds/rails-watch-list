@@ -1,4 +1,8 @@
-  <%# <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-  </div> %>
-
-<p><%= link_to list.name, list_path(list) %></p>
+<div class="card" style="width: 18rem;">
+  <%= link_to list_path(list) do %>
+    <img src="..." class="card-img-top" alt="...">
+  <% end %>
+  <div class="card-body">
+    <h5 class="card-title"><%= list.name %></h5>
+  </div>
+</div>
